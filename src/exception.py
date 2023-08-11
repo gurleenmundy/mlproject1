@@ -1,4 +1,15 @@
 import sys
+import os
+
+# Get the absolute path of the directory containing the current script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Get the absolute path of the project root directory (mlproject1)
+project_root = os.path.abspath(os.path.join(current_dir, '..'))
+
+# Add the project root directory to sys.path
+sys.path.append(project_root)
+
 from src.logger import logging
 
 def error_message_detail(error,error_detail:sys):
