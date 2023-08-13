@@ -63,3 +63,8 @@ class CustomData:
 
         except Exception as e:
             raise CustomException(e, sys)
+
+
+
+model_path = os.path.join('artifacts', 'model.pkl')
+preprocesser_path = os.path.join('artifacts', 'preprocessor.pkl')
